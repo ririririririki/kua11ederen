@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512" viewBox="0 0 512 512"
+     role="img" aria-label="Phone gently tilting left and right">
+  <title>Phone tilt indicator</title>
+  <desc>A minimalist phone icon gently rocks left and right above a curved double-headed arrow, on a pale gray rounded square with a transparent outside area.</desc>
+
+  <!-- Pale gray rounded-square tile; outside corners remain transparent -->
+  <rect x="0" y="0" width="512" height="512" rx="104"
+        fill="#EEEEF0" opacity="0.8"/>
+
+  <g opacity="0.8" fill="none" stroke="#858585" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Subtle side positions indicate the rocking motion -->
+    <g opacity="0.22" stroke-width="11">
+      <g transform="rotate(-8 256 224)">
+        <rect x="180" y="70" width="152" height="266" rx="31"/>
+      </g>
+      <g transform="rotate(8 256 224)">
+        <rect x="180" y="70" width="152" height="266" rx="31"/>
+      </g>
+    </g>
+
+    <!-- Main phone gently rocks left and right -->
+    <g stroke-width="12">
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+          values="-4 256 220;4 256 220;-4 256 220"
+          keyTimes="0;0.5;1" dur="2.4s" repeatCount="indefinite"
+          calcMode="spline" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+        <rect x="180" y="70" width="152" height="266" rx="31"/>
+        <path d="M226 98 H286" stroke-width="10"/>
+        <circle cx="256" cy="303" r="10" fill="#858585" stroke="none"/>
+      </g>
+    </g>
+
+    <!-- Thin curved left-right arrow -->
+    <g stroke-width="8">
+      <path d="M139 388 C196 440 316 440 373 388"/>
+      <path d="M139 388 L163 383 M139 388 L148 410"/>
+      <path d="M373 388 L349 383 M373 388 L364 410"/>
+    </g>
+  </g>
+</svg>
